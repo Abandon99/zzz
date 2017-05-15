@@ -105,17 +105,11 @@ header .per span {
 }
 
 
-/*---------skill-----*/
-
-.skill {
-	
-}
 .skill .title {	
 	border-bottom: solid 1px #e1e5e7;
 }
 
 .skill h2 {
-	
 	border-left: solid 2px #5fc0cd;
 	margin-left: 0.5rem;
 	padding-left: 0.5rem;
@@ -135,8 +129,6 @@ header .per span {
 .skill .allow .star img {
 	width: 100%;
 }
-
-/*--------------*/
 
 #detail {
 	margin-left: 1rem;
@@ -162,9 +154,6 @@ header .per span {
 	padding-left:.5rem;
 }
 
-/*--------footer---------*/
-
-
 .bb {
 	width: 100%;
 	height: 4rem;
@@ -178,7 +167,6 @@ header .per span {
 	z-index: ;
 	width: 100%;
 	height: 6rem;
-	
 }
 
 footer button {
@@ -191,6 +179,7 @@ footer button {
 	letter-spacing: 0.2rem;	
 	z-index: 999;
 }
+
 footer .message {
 	position: fixed;
 	bottom: 4%;
