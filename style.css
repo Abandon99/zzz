@@ -10,7 +10,7 @@ html {
 }
 
 body {
-	overflow-y: scroll;
+	overflow-y: auto;
 }
 
 header {
