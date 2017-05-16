@@ -1,6 +1,6 @@
 @charset "utf-8";
 
-body,p,div ,input,form,img,span，h2,footer,button {
+body,p,div ,input,form,img,span，h2,footer,button,header{
 	margin:0;
 	padding:0;
 }
@@ -10,7 +10,7 @@ html {
 }
 
 body {
-	overflow: scroll;
+	overflow-y: scroll;
 }
 
 header {
@@ -55,9 +55,6 @@ header .per span {
 .per span:hover {
 	cursor: pointer;
 }
-
-
-/* --------------main---------------- */
 
 .main {
 	width: 100%;	
