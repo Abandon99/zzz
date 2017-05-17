@@ -10,44 +10,42 @@ html {
 }
 
 body {
-	overflow-y: auto;
-}
-
-.container {
-	margin: 0 auto;
-	width: 100%;
-	min-width: 320px;
-	max-width: 720px;
+	overflow: scroll;
 }
 
 header {
-	position: fixed;
-	top: 0;
-	z-index: 999;
 	background-color: #5fc0cd;
 	width: 100%;
-	min-width: 320px;
-	max-width: 720px;
 	height: 3rem;
 	text-align: center;
 }
 
+
 header .back {
+	background-color: red;
 	position: absolute;
-	left: 1rem;
-	
+	width: 1rem;
+	height: 1rem;
+	margin-top: 1rem;
+	margin-left: 0.6rem;
+
+}
+
+header .back img {
+	width: 100%;
+	height: 100%;
 }
 
 header .per {
 	margin: 0 auto;
-	
+	color: white;
 }
 
-header  span {
-	color: white;
+header .per span {
+
 	line-height: 3rem;
 	height: 3rem;
-	font-size: 3rem;
+	font-size: 2rem;
 }
 
 .back img:hover {
@@ -62,16 +60,13 @@ header  span {
 /* --------------main---------------- */
 
 .main {
-	width:100%;
-	margin-top:3rem; 
+	width: 100%;	
 }
 
 .info {
 	position: relative;
 	height: 10rem;
-	background-image: url(task5-99_02.png);
-	background-size: 100% 100%;
-	font-size: 1.5rem;
+	background-color: #cacacb;
 }
 
 .info .head {
@@ -79,7 +74,6 @@ header  span {
 	position: absolute;
 	left: 1.5rem;
 	top: 2rem;
-	margin-left: -1rem;
 
 }
 
@@ -111,13 +105,18 @@ header  span {
 }
 
 
+/*---------skill-----*/
+
+.skill {
+	
+}
 .skill .title {	
-	border-bottom: solid .1rem #e1e5e7;
+	border-bottom: solid 1px #e1e5e7;
 }
 
 .skill h2 {
-	border-left: solid .2rem #5fc0cd;
-	font-size: 2.5rem;
+	
+	border-left: solid 2px #5fc0cd;
 	margin-left: 0.5rem;
 	padding-left: 0.5rem;
 }
@@ -125,7 +124,6 @@ header  span {
 .skill .allow {
 	display: flex;
 	margin-top: 0.5rem;
-	font-size: 1.8rem;
 }
 
 .skill .allow .star {
@@ -138,27 +136,25 @@ header  span {
 	width: 100%;
 }
 
+/*--------------*/
+
 #detail {
 	margin-left: 1rem;
 }
 
 .experience {
 	display: flex;
-	margin: 1rem 0;
+	margin-top: 1rem;
 	align-items: center;
-	padding:1rem 0 1rem 0;
-	border-bottom: solid .1rem #e1e5e7;
-	font-size: 2rem;
-
+	padding-bottom: 0.5rem;
+	border-bottom: solid 1px #e1e5e7;
 }
 
 .experience .l {
 	display: block;
-	color: #999999;
+	
 	min-width: 5rem;
-	border-right: solid .1rem #e1e5e7;	
-	padding-right: .5rem;
-
+	border-right: solid 1px #e1e5e7;	
 }
 
 .experience .r {
@@ -166,14 +162,22 @@ header  span {
 	padding-left:.5rem;
 }
 
-footer {
+/*--------footer---------*/
+
+
+.bb {
 	width: 100%;
-	min-width: 320px;
-	max-width: 720px;
+	height: 4rem;
 	position: fixed;
-	bottom: 1rem;
-	
-	
+	bottom: 4%;
+	z-index: 888;
+	background-color: white;
+}
+
+.aa {
+	z-index: ;
+	width: 100%;
+	height: 6rem;
 	
 }
 
@@ -181,36 +185,32 @@ footer button {
 	border: solid .1rem #5fc0cd;
 	width: 40%;
 	height: 3rem;
-	line-height: 3rem;
 	margin: 0 1rem;
 	border-radius: .7rem;
 	background-color: white;
 	letter-spacing: 0.2rem;	
 	z-index: 999;
-	font-size: 2.5rem;
-	color: #5fc0cd;
 }
-
 footer .message {
-	float: left;
+	position: fixed;
+	bottom: 4%;
+	left: 2%;
 }
 
 footer .phone {
-	float: right;
+	position: fixed;
+	bottom: 4%;
+	right: 2%;
 }
 
 button:focus {
 	outline: none;
-	color: white;
 }
 button:hover {
 	cursor: pointer;
 	background-color: #5fc0cd;
 }
 
-.big {
-	height: 5rem;
-}
 
 
 
