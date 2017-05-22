@@ -1,0 +1,353 @@
+@charset "utf-8";
+
+a {
+	color: white;
+	text-decoration: none;
+}
+
+a:hover {
+	text-decoration: none;
+	width: 100%;
+	color: white;
+}
+
+button {
+	outline: none;
+}
+
+@media screen and (min-width:320px) {
+	body .fot .l {
+		left: 2%;
+	}
+	body .fot .r {
+		right: 2%;
+	}
+}
+
+@media screen and (min-width:340px) {
+	body .fot .l {
+		left: 5%;
+	}
+	body .fot .r {
+		right:5%;
+	}
+}
+
+@media screen and (min-width:821px) {
+	body .fot .l {
+		left: 20%;
+	}
+	body .fot .r {
+		right:20%;
+	}
+}
+
+@media screen and (min-width:1100px) {
+	body .fot .l {
+		left: 30%;
+	}
+	body .fot .r {
+		right:30%;
+	}
+}
+
+
+* {
+	margin: 0px;
+	padding: 0px;
+
+}
+
+img {
+	width: 100%;
+}
+
+body {
+	margin:0 auto;
+	width:100%;
+	max-width: 720px;
+	min-width: 320px;
+
+
+}
+
+header {
+	padding: 1rem 0;
+	background-color: #29bde0;
+	
+	display: flex;
+	justify-content: space-between;
+}
+
+header div {
+	width: 2rem;
+	margin:0 1rem;
+}
+
+header span {
+	font-size: 2rem;
+	height: 2rem;
+	line-height: 2rem;
+	color:white;
+}
+
+.audio {
+	padding: 1.5rem 0;
+	background-color: #b9e9f5;
+	display: flex;
+	justify-content: space-between;
+}
+
+.audio span {
+	font-size: 1.4rem;
+	color: #464646;
+	height: 1.8rem;
+	line-height: 1.8rem;
+	padding-left: 1rem;
+}
+
+.mp3-img {
+	width: 2rem;
+	height: 2rem;
+	margin: 0 1rem;
+}
+
+.mp3-img img {
+	width: 100%;
+}
+
+.tips {
+	background-color:#29bde0;
+	font-size: 1rem;
+	padding:0.5rem 0 0.5rem 2.5rem ;
+	color: white;
+}
+
+
+/*------------------main--------------------*/
+
+.main {
+	display: flex;
+	justify-content: center;
+	flex-wrap: wrap;
+	background-color: #29bde0;
+}
+
+.role {
+	width: 6rem;
+	margin:1rem 0.5rem;
+	position: relative;
+}
+
+.zindex {
+	width: 6rem;
+	height: 8.2rem;
+	position: absolute;
+	top:0;
+	left:0;
+	z-index: 999;
+	/*border: solid;*/
+
+}
+
+.zindex:hover {
+	z-index: 0;
+}
+
+.zindex div  {
+	width: 100%;
+	height: 1.3rem;
+	position: absolute;
+	bottom: 0;
+	background-color: #29bde0;
+
+}
+
+.white {
+	background-color: white;
+	height: 6rem;
+	width: 6rem;display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.role-box {
+	background-color: #f5c97b;
+	width: 5.5rem;
+	height: 5.5rem;
+	display: flex;
+	flex-direction: column;
+	text-align: center;
+}
+
+.role-box .name {
+	height: 4rem;
+	line-height: 4rem;
+}
+
+
+.role .role-box .number {
+	background-color: #83b09a;
+	font-size: 0.8rem;
+	flex-grow: 1;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+
+}
+
+
+
+
+.option {
+	position:relative;
+	top:1rem;
+	display: flex;
+	justify-content: space-around;
+}
+
+.option div {
+	width: 1rem;
+	height: 1rem;
+
+}
+
+.option div img {
+	width:100%;;
+}
+
+
+/*--------------footer-----------*/
+.space {
+	width: 100%;
+	height: 5rem;
+	background-color: #29bde0;
+}
+
+.fot {
+	max-width: 720px;
+	min-width: 320px;
+	width: 100%;
+	display: flex;
+	/*flex-direction: column;*/
+	justify-content: center;
+	background-color: #29bde0;
+	position: relative;
+}
+
+footer {
+	z-index: 999;
+	max-width: 720px;
+	min-width: 320px;
+	width: 100%;
+	height: 5rem;
+	position: fixed;
+	bottom: 0;
+	background-color: #29bde0;
+	opacity:0.5;
+}
+
+
+
+.dead {
+
+	position: fixed;
+	bottom: 0.5rem;
+	border: none;
+	font-size: 1.5rem;
+	background-color: #fbb435;
+	color: white;
+	padding: 1rem 5rem;
+	border-radius: 1rem;
+	z-index: 999;
+	margin: 0 auto;
+}
+
+img ,button ,header span{
+	cursor: pointer;
+}
+
+/*-------------------游戏结果-------------------------*/
+
+
+
+.fot .l {
+	left: 30%;
+	background-color: #f66f6f;
+}
+
+.fot .r {
+	right:30%;
+}
+.fot .btn-fot {
+	position: fixed;
+	width: 10rem;
+	font-size: 1.2rem;
+	padding:1rem 1.5rem;
+	font-weight: 200;
+}
+
+.result {
+	background-color: #29bde0;
+}
+.result  .who {
+	width:14rem;
+	margin: 0 auto;
+}
+.result  .who img {
+	width: 100%;
+}
+
+#congra {
+	color: #ffc865;
+	font-weight: 600;
+	font-size: 1rem;
+}
+
+.result p ,.result span{
+	margin: 0.5rem 2rem ;
+	padding: 0;
+	color: white;
+	font-size: 0.9rem;
+	font-weight: 200;
+}
+
+.result .number {
+	margin: 0 2rem;
+}
+
+.result  span {
+	margin: 0 0.5rem  0.2rem	 0;
+	display: inline-block;
+	width: 5rem;
+}
+
+.detail {
+	padding: .5rem 0;
+}
+
+.day {
+	padding:0 2rem 2rem 1rem;
+	border-bottom: solid 1px #a6a6a6	;
+
+}
+
+.day h3 {
+	display: inline-block;
+	font-weight: 400;
+	padding: 0 0 0.5rem 0;
+}
+
+.day span {
+	float:right;
+	margin-top: 0.2rem;
+	color: #a6a6a6;
+	font-weight: 300;
+}
+.day p {
+	height: 1.8rem;
+	line-height: 1.8rem;
+	color: #a6a6a6;
+	font-weight: 300;
+}
+
