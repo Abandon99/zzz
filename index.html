@@ -2,271 +2,52 @@
 <html lang="zh-CN">
 <head>
 	<meta charset="UTF-8">
-	<title>护工列表</title>
-	<script src="jquery-3.2.1.min.js"></script>
-	<link href="bootstrap.min.css" rel="stylesheet">
-	<script src="bootstrap.min.js"></script>
+	<title>桌游精灵</title>
+	<script src="js/jquery-3.2.1.min.js"></script>
+	<link href="css/bootstrap.min.css" rel="stylesheet">
+	<script src="js/bootstrap.min.js"></script>
 	
-	<link rel="stylesheet" type="text/css" href="style.css">
+	
+	
+	<link rel="stylesheet" type="text/css" href="css/style.css">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0 maximum-scale=1">
 </head>
 <body>
 	
+	<header>
+        <div><img src="images/首页_03.png" alt=""></div>
+	</header>
+
 	<div class="container">
-		<div class="head">
-			<button class="host">找雇主</button>
-			<button class="nurse">招护工</button>
-			<div class="l"><img src="task5-2_03.jpg" alt=""></div>
+		<div class="last">
+			<span>上次游戏：捉鬼猜词版</span>
+			<span>></span>
 		</div>
+		<div class="gost-game">
+			<div class="gost">捉鬼游戏</div>
+			<hr>
+			<div class="version">
+				<div class="version-degree aa"><a href="vote.html">简化版</a></div>
+				<p>有123456个用户正在玩这个游戏</p>
+			</div>
+			<div class="version">
+				<div class="version-degree aa"><a href="vote.html">正常版</a></div>
+				<p>有123456个用户正在玩这个游戏</p>
+			</div>
 
-		<div class="select">
-			<div class="dropdown">
-			    <button type="button" class="btn dropdown-toggle" id="dropdownMenu1" data-toggle="dropdown">所在地<span class="caret"></span>
-			    </button>
-			    <ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu1">
-			        <li role="presentation">
-			            <a role="menuitem" tabindex="-1" href="#">北京</a>
-			        </li>
-			        <li role="presentation" class="divider"></li>
-			        <li role="presentation">
-			            <a role="menuitem" tabindex="-1" href="#">上海</a>
-			        </li>
-			        <li role="presentation" class="divider"></li>
-			        <li role="presentation">
-			            <a role="menuitem" tabindex="-1" href="#">广州</a>
-			        </li>
-			        <li role="presentation" class="divider"></li>
-			        <li role="presentation">
-			            <a role="menuitem" tabindex="-1" href="#">湖南</a>
-			        </li>
-			    </ul>
+			<div class="version">
+				<div class="version-degree aa"><a href="vote.html">复杂版</a></div>
+				<p>有123456个用户正在玩这个游戏</p>
 			</div>
-			<div class="dropdown">
-			    <button type="button" class="btn dropdown-toggle" id="dropdownMenu1" data-toggle="dropdown">食宿<span class="caret"></span>
-			    </button>
-			    <ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu1">
-			        <li role="presentation">
-			            <a role="menuitem" tabindex="-1" href="#">包食宿</a>
-			        </li>
-			        <li role="presentation" class="divider"></li>
-			        <li role="presentation">
-			            <a role="menuitem" tabindex="-1" href="#">食宿自费</a>
-			        </li>
-			        
-			    </ul>
+			<div class="cirle">
+				<div id="one"></div><div></div><div></div><div></div>
 			</div>
-			<div class="dropdown">
-			    <button type="button" class="btn dropdown-toggle" id="dropdownMenu1" data-toggle="dropdown">病人情况<span class="caret"></span>
-			    </button>
-			    <ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu1">
-			        <li role="presentation">
-			            <a role="menuitem" tabindex="-1" href="#">智障</a>
-			        </li>
-			        <li role="presentation" class="divider"></li>
-			        <li role="presentation">
-			            <a role="menuitem" tabindex="-1" href="#">狂躁症</a>
-			        </li>
-			        <li role="presentation" class="divider"></li>
-			        <li role="presentation">
-			            <a role="menuitem" tabindex="-1" href="#">抑郁</a>
-			        </li>
-			        <li role="presentation" class="divider"></li>
-			        <li role="presentation">
-			            <a role="menuitem" tabindex="-1" href="#">其他</a>
-			        </li>
-			    </ul>
-			</div>
+			<div id="right"></div>
 		</div>
-
-		<div class="detail-box">
-			<div class="detail">
-				<div class="detail-rol">
-					<div class="detail-img"><img src="task5-2_17.jpg" alt=""></div>
-					<span class="detail-text">服务日期</span>
-				</div>
-				<div class="detail-rol">
-					<div class="detail-img"></div>
-					<span class="detail-text" id="data-text">2015-7-09至2015-9-14</span>
-				</div>
-				<div class="detail-rol">
-					<div class="detail-img"><img src="task5-2_14.jpg" alt=""></div>
-					<span class="detail-text">北京.通州.果园</span>
-				</div>
-				<div class="price">25元每小时<span>></span></div>
-			</div>
-		</div>
-		<div class="detail-box">
-			<div class="detail">
-				<div class="detail-rol">
-					<div class="detail-img"><img src="task5-2_17.jpg" alt=""></div>
-					<span class="detail-text">服务日期</span>
-				</div>
-				<div class="detail-rol">
-					<div class="detail-img"></div>
-					<span class="detail-text" id="data-text">2015-7-09至2015-9-14</span>
-				</div>
-				<div class="detail-rol">
-					<div class="detail-img"><img src="task5-2_14.jpg" alt=""></div>
-					<span class="detail-text">北京.通州.果园</span>
-				</div>
-				<div class="price">25元每小时<span>></span></div>
-			</div>
-		</div>
-		<div class="detail-box">
-			<div class="detail">
-				<div class="detail-rol">
-					<div class="detail-img"><img src="task5-2_17.jpg" alt=""></div>
-					<span class="detail-text">服务日期</span>
-				</div>
-				<div class="detail-rol">
-					<div class="detail-img"></div>
-					<span class="detail-text" id="data-text">2015-7-09至2015-9-14</span>
-				</div>
-				<div class="detail-rol">
-					<div class="detail-img"><img src="task5-2_14.jpg" alt=""></div>
-					<span class="detail-text">北京.通州.果园</span>
-				</div>
-				<div class="price">25元每小时<span>></span></div>
-			</div>
-		</div>
-		<div class="detail-box">
-			<div class="detail">
-				<div class="detail-rol">
-					<div class="detail-img"><img src="task5-2_17.jpg" alt=""></div>
-					<span class="detail-text">服务日期</span>
-				</div>
-				<div class="detail-rol">
-					<div class="detail-img"></div>
-					<span class="detail-text" id="data-text">2015-7-09至2015-9-14</span>
-				</div>
-				<div class="detail-rol">
-					<div class="detail-img"><img src="task5-2_14.jpg" alt=""></div>
-					<span class="detail-text">北京.通州.果园</span>
-				</div>
-				<div class="price">25元每小时<span>></span></div>
-			</div>
-		</div>
-		<div class="detail-box">
-			<div class="detail">
-				<div class="detail-rol">
-					<div class="detail-img"><img src="task5-2_17.jpg" alt=""></div>
-					<span class="detail-text">服务日期</span>
-				</div>
-				<div class="detail-rol">
-					<div class="detail-img"></div>
-					<span class="detail-text" id="data-text">2015-7-09至2015-9-14</span>
-				</div>
-				<div class="detail-rol">
-					<div class="detail-img"><img src="task5-2_14.jpg" alt=""></div>
-					<span class="detail-text">北京.通州.果园</span>
-				</div>
-				<div class="price">25元每小时<span>></span></div>
-			</div>
-		</div>
-		<div class="detail-box">
-			<div class="detail">
-				<div class="detail-rol">
-					<div class="detail-img"><img src="task5-2_17.jpg" alt=""></div>
-					<span class="detail-text">服务日期</span>
-				</div>
-				<div class="detail-rol">
-					<div class="detail-img"></div>
-					<span class="detail-text" id="data-text">2015-7-09至2015-9-14</span>
-				</div>
-				<div class="detail-rol">
-					<div class="detail-img"><img src="task5-2_14.jpg" alt=""></div>
-					<span class="detail-text">北京.通州.果园</span>
-				</div>
-				<div class="price">25元每小时<span>></span></div>
-			</div>
-		</div>
-		<div class="detail-box">
-			<div class="detail">
-				<div class="detail-rol">
-					<div class="detail-img"><img src="task5-2_17.jpg" alt=""></div>
-					<span class="detail-text">服务日期</span>
-				</div>
-				<div class="detail-rol">
-					<div class="detail-img"></div>
-					<span class="detail-text" id="data-text">2015-7-09至2015-9-14</span>
-				</div>
-				<div class="detail-rol">
-					<div class="detail-img"><img src="task5-2_14.jpg" alt=""></div>
-					<span class="detail-text">北京.通州.果园</span>
-				</div>
-				<div class="price">25元每小时<span>></span></div>
-			</div>
-		</div>		
-		<div class="detail-box">
-			<div class="detail">
-				<div class="detail-rol">
-					<div class="detail-img"><img src="task5-2_17.jpg" alt=""></div>
-					<span class="detail-text">服务日期</span>
-				</div>
-				<div class="detail-rol">
-					<div class="detail-img"></div>
-					<span class="detail-text" id="data-text">2015-7-09至2015-9-14</span>
-				</div>
-				<div class="detail-rol">
-					<div class="detail-img"><img src="task5-2_14.jpg" alt=""></div>
-					<span class="detail-text">北京.通州.果园</span>
-				</div>
-				<div class="price">25元每小时<span>></span></div>
-			</div>
-		</div>
-		<div class="detail-box">
-			<div class="detail">
-				<div class="detail-rol">
-					<div class="detail-img"><img src="task5-2_17.jpg" alt=""></div>
-					<span class="detail-text">服务日期</span>
-				</div>
-				<div class="detail-rol">
-					<div class="detail-img"></div>
-					<span class="detail-text" id="data-text">2015-7-09至2015-9-14</span>
-				</div>
-				<div class="detail-rol">
-					<div class="detail-img"><img src="task5-2_14.jpg" alt=""></div>
-					<span class="detail-text">北京.通州.果园</span>
-				</div>
-				<div class="price">25元每小时<span>></span></div>
-			</div>
-		</div>
-		<div class="detail-box">
-			<div class="detail">
-				<div class="detail-rol">
-					<div class="detail-img"><img src="task5-2_17.jpg" alt=""></div>
-					<span class="detail-text">服务日期</span>
-				</div>
-				<div class="detail-rol">
-					<div class="detail-img"></div>
-					<span class="detail-text" id="data-text">2015-7-09至2015-9-14</span>
-				</div>
-				<div class="detail-rol">
-					<div class="detail-img"><img src="task5-2_14.jpg" alt=""></div>
-					<span class="detail-text">北京.通州.果园</span>
-				</div>
-				<div class="price">25元每小时<span>></span></div>
-			</div>
-		</div>
-
-		<div class="space">
-		</div>
-
-		<footer>
-			<div class="left">
-				<img src="task5-2_26.jpg" alt="">
-				<span>首页</span>
-			</div>
-			<div class="mid">
-				<img src="task5-2_20.jpg" alt="">
-			</div>
-			<div class="right">
-				<img src="task5-2_23.jpg" alt="">
-				<span>我的</span>
-			</div>
-		</footer>
 
 	</div>
+
+
 	
 
 	
