@@ -116,6 +116,22 @@ header span {
 	width: 100%;
 }
 
+.ss {
+	position: relative;
+}
+
+.square {
+	width: 0;
+	height: 0;
+	border-width: 8px 8px 0 8px;
+	border-color: #b9e9f5  transparent;
+	border-style: solid;
+	background-color: #29bde0;;
+	display: block;
+	position: absolute;
+	left: 3rem;
+}
+
 .tips {
 	background-color:#29bde0;
 	font-size: 1rem;
@@ -127,10 +143,13 @@ header span {
 /*------------------main--------------------*/
 
 .main {
+
+	background-color: #29bde0;
+}
+
+.main .row {
 	display: flex;
 	justify-content: center;
-	flex-wrap: wrap;
-	background-color: #29bde0;
 }
 
 .role {
@@ -139,29 +158,6 @@ header span {
 	position: relative;
 }
 
-.zindex {
-	width: 6rem;
-	height: 8.2rem;
-	position: absolute;
-	top:0;
-	left:0;
-	z-index: 999;
-	/*border: solid;*/
-
-}
-
-.zindex:hover {
-	z-index: 0;
-}
-
-.zindex div  {
-	width: 100%;
-	height: 1.3rem;
-	position: absolute;
-	bottom: 0;
-	background-color: #29bde0;
-
-}
 
 .white {
 	background-color: white;
@@ -195,8 +191,11 @@ header span {
 	justify-content: center;
 
 }
-
-
+/*----好神奇，之前没想到hover能控制其他元素，省了js啊~~~----*/
+.role:hover > .option div {
+	display: block;
+}
+/*-------------------------------------------------------------*/
 
 
 .option {
@@ -207,6 +206,7 @@ header span {
 }
 
 .option div {
+	display: none;
 	width: 1rem;
 	height: 1rem;
 
