@@ -1,214 +1,56 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
-    <title>51包装</title>
+    <title>登录页sass</title>
 
-    <script src="js/jquery-3.2.1.min.js"></script>
-    <link href="css/bootstrap.min.css" rel="stylesheet">
-    <script src="js/bootstrap.min.js"></script>
-    <link href="css/style.css" rel="stylesheet">
+    <link href="css/ss.css" rel="stylesheet">
     <meta name="viewport" content="width=device-width, initial-scale=1.0 maximum-scale=1">
 </head>
 <body>
     <header>
-        <div class="header-con">
-            <div class="header-up">
-                <div class="left">客服热线：010-594-25698</div>
-                <div class="right"><a href="">登录</a><a href="">注册</a></div>
-            </div>
+        <div class="img-back">
+            <img src="images/登陆_03.jpg" alt="">
         </div>
+        <span class="">登录</span>
     </header>
-    <div class="header-under">
-        <div class="header-under-right">
-            <a href="" class=""><span>首页</span></a>
-            <a href="" class=""><span>在线订制</span></a>
-            <a href="" class=""><span>标准箱</span></a>
-            <a href="" class=""><span>品质保证</span></a>
-        </div>
-    </div>
     <div class="main">
-        <div class="rate">
-            <div class="row" style="background-color: #ff7f02;z-index: 999;"><div class="cirle" style="background-color: #ff7f02">1</div></div>
-            <div class="row"><div class="cirle">2</div></div>
-            <div class="row"><div class="cirle">3</div></div>
-            <div class="row"><div class="cirle">4</div></div>
-        </div>
-        <div class="select">
-            <h4>|请您用以下方式来订制您的纸箱</h4>
-            <div class="row">
-                <div class="tips"><img src="images/定制箱_05.jpg" alt=""><span>请选择箱形</span></div>
-                <div class="detail">
-                    <form action="">
-                        <div class="moment">
-                            <input name="boxclose" type="radio" id="box">
-                            <label for="box">对口箱</label>
-                        </div>
-                        <div class="moment">
-                            <input name="boxclose"  type="radio" id="fly">
-                            <label for="fly">飞机盒</label>
-                        </div>
-                        <div class="moment">
-                            <input name="boxclose"  type="radio" id="sky">
-                            <label for="sky">天地盖</label>
-                        </div>
-                        <div class="look-over">
-                            <div class="dropdown">
-                                <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
-                                    查看详情
-                                    <span class="caret"></span>
-                                </button>
-                                <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
-                                    <li><a href="#">查看详情</a></li>
-                                    <li><a href="#"> 另一个详情</a></li>
-                                    <li><a href="#">查看详情</a></li>
-                                </ul>
-                            </div>
-                        </div>
-                    </form>
-
-                </div>
+        <div class="account">
+            <div class="login">
+                <div class="img-login"><img src="images/登陆_11.jpg" alt=""></div>
+                <input type="number" placeholder="请输入手机号" maxlength="11">
+            </div>
+            <div class="login">
+                <div class="img-login"><img src="images/登陆_11.jpg" alt=""></div>
+                <input type="password" placeholder="请输入密码">
             </div>
         </div>
-        <div class="select" id="second">
-            <div class="row">
-                <div class="tips"><img src="images/定制箱_05.jpg" alt=""><span>请选择箱形</span></div>
-                <div class="detail">
-                    <div class="second">
-                        <form action="">
-                            <div class="moment">
-                                <input name="boxclose" type="radio" id="io">
-                                <label for="io">外径</label>
-                            </div>
-                            <!--<div class="look-over">
-                                <div class="dropdown">
-                                    <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
-                                        查看详情
-                                        <span class="caret"></span>
-                                    </button>
-                                    <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
-                                        <li><a href="#">查看详情</a></li>
-                                        <li><a href="#"> 另一个详情</a></li>
-                                        <li><a href="#">查看详情</a></li>
-                                    </ul>
-                                </div>
-                            </div>-->
-                        </form>
-                        <form id="lk">
-                            <span style="margin-left: 1rem">长</span><input style="width: 5rem;margin: 0 0.5rem" type="text"><span>mm</span>
-                            <span style="margin-left: 1rem">长</span><input style="width: 5rem;margin: 0 0.5rem" type="text"><span>mm</span>
-                            <span style="margin-left: 1rem">长</span><input style="width: 5rem;margin: 0 0.5rem" type="text"><span>mm</span>
-                        </form>
-                    </div>
-                    <div class="second">
-                        <form action="">
-                            <div class="moment">
-                                <input name="boxclose" type="radio" id="io">
-                                <label for="io">内径</label>
-                            </div>
-
-                        </form>
-                        <form id="lk">
-                            <span style="margin-left: 1rem">长</span><input style="width: 5rem;margin: 0 0.5rem" type="text"><span>mm</span>
-                            <span style="margin-left: 1rem">长</span><input style="width: 5rem;margin: 0 0.5rem" type="text"><span>mm</span>
-                            <span style="margin-left: 1rem">长</span><input style="width: 5rem;margin: 0 0.5rem" type="text"><span>mm</span>
-
-                        </form>
-                        <div style="position:relative ;max-width: 720px;margin: 0 auto;flex-grow: 1"><div style="right: 0" class="look-over">
-                            <div class="dropdown">
-                                <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
-                                    查看详情
-                                    <span class="caret"></span>
-                                </button>
-                                <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
-                                    <li><a href="#">查看详情</a></li>
-                                    <li><a href="#"> 另一个详情</a></li>
-                                    <li><a href="#">查看详情</a></li>
-                                </ul>
-                            </div>
-                        </div></div>
-
-                    </div>
-
-                </div>
-            </div>
+        <div class="login-btn">
+            <button>登录</button>
         </div>
-
-        <div class="select" id="row3">
-            <div class="row">
-                <div class="tips"><img src="images/定制箱_05.jpg" alt=""><span><请选择材质></请选择材质></span></div>
-                <div class="detail">
-                    <form action="">
-                        <div class="moment">
-                            <input name="boxclose" type="radio" id="aa">
-                            <label for="aa">三层a</label>
-                        </div>
-                        <div class="moment">
-                            <input name="boxclose"  type="radio" id="bb">
-                            <label for="bb">三层aaa</label>
-                        </div>
-                        <div class="moment">
-                            <input name="boxclose"  type="radio" id="dd">
-                            <label for="dd">三层aassa</label>
-                        </div>
-                        <div class="moment">
-                            <input name="boxclose"  type="radio" id="cc">
-                            <label for="cc">三层abb</label>
-                        </div>
-                        <div class="look-over">
-                            <div class="dropdown">
-                                <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
-                                    查看详情
-                                    <span class="caret"></span>
-                                </button>
-                                <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
-                                    <li><a href="#">查看详情</a></li>
-                                    <li><a href="#"> 另一个详情</a></li>
-                                    <li><a href="#">查看详情</a></li>
-                                </ul>
-                            </div>
-                        </div>
-                    </form>
-
-                </div>
-            </div>
+        <div class="between">
+            <a href="">立即注册</a>
+            <a href="">忘记密码</a>
         </div>
-        <div class="bt">
-            <buttn type="button " class="btn btn-danger btn-lg">下一步</buttn>
+        <div class="another">
+            <div class="row"></div>
+            <span>第三方账号登录</span>
+            <div class="row"></div>
+        </div>
+        <div class="three">
+            <div class="another-login">
+                <div class="img-another"><img src="images/登陆_49.jpg" alt=""></div>
+                <span>微信登录</span>
+            </div>
+            <div class="another-login">
+                <div class="img-another"><img src="images/登陆_51.jpg" alt=""></div>
+                <span>微波登录</span>
+            </div>
+            <div class="another-login">
+                <div class="img-another"><img src="images/登陆_53.jpg" alt=""></div>
+                <span>QQ登录</span>
+            </div>
         </div>
     </div>
-    <footer>
-        <div class="con">
-            <div class="fot">
-                <div class="info">
-                    <div class="le">
-                        <p style="border: none">51包装网---纸箱包装首选平台</p>
-                        <!--<span>关于我们</span> | <span>联系我们</span> | <span>合作企业</span>-->
-                    </div>
-                    <div class="mi">
-                        <!--<h5>旗下网站</h5>-->
-                        <div>
-                            <span>关于我们</span>
-                            <span>配送流程</span>
-                            <soan>媒体介绍</soan>
-                        </div>
-                        <div>
-                            <span>联系我们</span>
-                            <span>下单指南</span>
-                        </div>
-                    </div>
-                    <div class="ri">
-                        <span>微信公众平台</span>
-                        <img src="images/技能树首页_43.jpg" alt="">
-                    </div>
-                </div>
-
-            </div>
-        </div>
-        <p>@Copyright [c] 51包装有限公司 Allrights Reserved. | 京ICP备130256987</p>
-    </footer>
-
-
 </body>
 </html>
