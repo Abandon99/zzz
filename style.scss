@@ -1,0 +1,223 @@
+*,.container {
+	margin: 0;
+	padding: 0;
+}
+html {
+	overflow:hidden;
+}
+img {
+	width: 100%;
+}
+button {
+	border:none;
+	background-color: white;
+	&:focus {
+		outline:none;
+	}
+}
+
+html {
+	overflow: auto;
+}
+
+@media screen and (max-width: 480px) {
+  html {
+    font-size: 50%;
+  }
+}
+//------------以下是定义样式-------------------------------
+//定义盒子大小并且居中
+@mixin boxwidth {
+	width: 100%;
+	min-width: 320px;
+	max-width: 720px;
+	margin: 0 auto;
+}
+//定义盒子为flex并且水平垂直居中
+@mixin allcenter {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+//定义盒子固定顶端且距顶部的距离
+@mixin fixtop($range) {
+	position: fixed;
+	top: $range;
+}
+//定义盒子固定底部且距底部的距离
+@mixin fixbottom($range) {
+	position: fixed;
+	bottom: $range;
+}
+//定义绝对移动
+@mixin how-absolute($top-value,$right-value,$bottom-value,$left-value,
+$top:auto,$right:auto,$bottom:auto,$left:auto) {
+	position: absolute;
+	top: $top-value;
+	right:$right-value;
+	bottom: $bottom-value;
+	left: $left-value;
+}
+//定义背景灰色
+$backgray : #999999;
+//定义背景蓝色
+$backblue:#5fc0cd;
+//--------定义样式结束---------------------------
+
+/*最外部盒子*/
+.container {
+	@include boxwidth;
+	.space {
+		height: 6rem;
+	}
+}
+/*头部部分，固定顶端*/
+.head {
+	@include allcenter;
+	@include boxwidth;
+	@include fixtop(0);
+	height: 5rem;
+	background-color: #55a8b3;
+	z-index: 999;
+	button {
+		background-color:$backblue;
+		height:80%;
+		width: 8rem;
+		letter-spacing: 1px;
+		border-radius: 10px;
+		color: white;
+		font-weight: 300;
+		&:focus {
+			background-color: white;
+			color: $backblue;
+		}
+	}
+	.l {
+		@include allcenter;
+		@include how-absolute(auto,2rem,auto,auto);
+		width: 2rem;
+		height: 100%;
+		cursor: pointer;
+	}
+}
+/*下拉菜单部分*/
+.select {
+	@include allcenter;
+	margin-top: 5rem;
+}
+.select .dropdown {
+		position: relative;
+		width: 100%;
+		.drop-btn {
+			width: 100%;
+			cursor: pointer;
+			font-size: 1.8rem;
+			color: $backgray;
+			border: solid .1px $backgray;
+		}
+		.point {
+			width: 0;
+			height: 0;
+			border-width: 5px 5px 0 5px;
+			border-color: $backgray transparent;
+			border-style: solid;
+			@include how-absolute(auto,1.2rem,38%,auto)
+		}
+		.dropdown-content {
+			position: absolute;
+			display: none;
+			width: 80%;
+			z-index: 999;
+			background-color: #f9f9f9;
+			text-align: center;
+			border-radius: 10px;
+		}
+}
+
+ .dropdown:hover .dropdown-content  {
+	display: block;
+}
+a {
+	display: block;
+	width: 100%;
+	margin: 0.5rem 0;
+	text-decoration: none;
+	color: black;
+	&:hover {
+		text-decoration: none;
+	}
+}
+/*雇工的具体信息*/
+.detail{
+	position: relative;
+	margin:1% 2%;
+	border-bottom: solid .1rem #e1e5e7;
+	.detail-rol {
+		margin:3% 0;
+		.detail-img {
+			width: 2rem;
+			height: 2rem;
+			float: left;
+		}
+		.detail-text {
+			color: #999999;
+			height: 2rem;
+			line-height: 2rem;
+			font-size: 2rem;
+			margin-left: 1rem;
+		}
+		.data-text {
+			color: black;
+		}
+	}
+	.price {
+		@include how-absolute(4rem,5%,auto,auto);
+		position: absolute;
+		color: red;
+		font-size: 2rem;
+		span {
+			color: #5fc0cd;
+			margin-left:1rem;
+		}
+	}
+}
+/*底部，且固定*/
+footer {
+	@include allcenter;
+	@include boxwidth;
+	justify-content: space-between;
+	@include fixbottom(0);
+	width: 100%;
+	background-color: #f8fafb;
+	z-index: 999;
+	div {
+		width: 10%;
+		margin:0 2rem;
+		color: #999999;
+		cursor: pointer;
+	}
+}
+
+.right, .mid, .left {
+	text-align: center;
+}
+
+.price {
+	cursor: pointer;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
